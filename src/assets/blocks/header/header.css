@@ -1,0 +1,256 @@
+/*=============== HEADER ===============*/
+.header {
+  width: 100%;
+  background-color: var(--input-color);
+  z-index: var(--z-fixed);
+  transition: .4s;
+  /*For animation dark mode*/
+  top: 6rem;
+  /* left: 0; */
+  /* margin-bottom: 600px; */
+}
+
+/*=============== NAV ===============*/
+.nav {
+  /* background-color:  var(--input-color); */
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__close,
+.nav__toggle {
+  color: var(--text-color);
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-weight: var(--font-medium);
+}
+
+.nav__logo-img {
+  /* width: 1.5rem; */
+  height: 3rem;
+}
+
+.nav__toggle {
+  display: inline-flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .header {
+    /* position: fixed; */
+  }
+
+  .nav__menu {
+    position: fixed;
+    background-color: var(--input-color);
+    top: 6rem;
+    right: -100%;
+    /* 0% */
+    width: 100%;
+    padding: 4rem 0;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+    transition: .4s;
+  }
+}
+
+.nav__img {
+  /* width: 100px; */
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(-15deg);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.nav__link {
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  transition: .3s;
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__close {
+  font-size: 2rem;
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+/* Show menu */
+.show-menu {
+  /* top: 0; */
+  top: 6rem;
+  right: 0;
+  z-index: 500 !important;
+}
+
+/* Change background header */
+.scroll-header {
+  box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+}
+
+/* Active link */
+.active-link {
+  color: var(--first-color);
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 767px) {
+
+  .nav {
+    height: calc(var(--header-height));
+    column-gap: 3rem;
+  }
+
+  .nav__toggle,
+  .nav__close,
+  .nav__img {
+    display: none;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .dark-theme .nav__menu {
+    box-shadow: none;
+  }
+
+  .main {
+    /* margin-top: var(--header-height); */
+  }
+
+
+  /* -------------------------------------------------------------------------- */
+  .dropbtn {
+    /* background-color: #04AA6D; */
+    /* color: white; */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--input-color);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: var(--title-color);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    color: var(--first-color);
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {}
+
+
+@media screen and (max-width: 767px) {
+
+
+  /* -------------------------------------------------------------------------- */
+
+  .collapsible-head {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    display: none;
+    overflow: hidden;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+  }
+
+  .active {
+    /* display: grid !important; */
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--input-color);
+  }
+
+  .active>a {
+    /* background-color: blue;  */
+    padding: 0 20px;
+    /* padding-top: 7px; */
+    color: var(--title-color);
+    text-decoration: none;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .collapsible-head:hover {
+    text-align: left;
+  }
+
+}
+
+@media (min-width:767px) and (max-width:855px) {
+  .nav__logo {
+      display:none;
+  }
+}

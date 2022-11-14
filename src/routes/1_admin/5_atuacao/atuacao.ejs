@@ -1,0 +1,125 @@
+<section class="about section" id="about">
+
+  <h2 class="section__title">Mandata</h2>
+
+  <div class="container add-button">
+    <button class="myBtn button modalButton">Adicionar mandata</button>
+
+    <div class="modal myModal add-mandata-modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="mandata-item">
+
+          <div class="mandata-row">
+            <div class="mandata-name">Título</div>
+            <input class="mandata-title mandata-input" type="text" name="mandata_title"
+              value='<%=mandata.mandata_title%>'>
+          </div>
+
+          <div class="mandata-row">
+            <div class="mandata-name">Categoria</div>
+            <select name="mandata_category" class="mandata-input mandata-category" value='<%=mandata.mandata_category%>'>
+              <option value="educacao">Educação</option>
+              <option value="mulheres">Mulheres</option>
+              <option value="movimento-negro">Movimento negro</option>
+              <option value="movimento-lgbtqia">Movimento LGBTQIA+</option>
+            </select>
+          </div>
+
+          <div class="mandata-row">
+            <div class="mandata-name">Tipo</div>
+            <select name="mandata_category" class="mandata-input mandata-type" value='<%=mandata.mandata_type%>'>
+              <option value="projetos_de_lei">Projetos de lei</option>
+              <option value="requerimentos">Requerimentos</option>
+              <option value="oficios">Ofícios</option>
+              <option value="sessoes_especiais">Sessões especiais</option>
+            </select>
+          </div>
+
+          <div class="mandata-row">
+            <div class="mandata-name">Link arquivo</div>
+            <input class="mandata-link mandata-input" type="text" name="mandata_link" value='<%=mandata.mandata_link%>'>
+          </div>
+
+          <div class="mandata-row">
+            <div class="mandata-name">Data</div>
+            <input class="mandata-date mandata-input" type="date" name="mandata_date" value='<%=mandata.mandata_date%>'>
+          </div>
+
+        </div>
+
+        <button class="add-mandata-button myBtn button ">Adicionar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mandata__container container">
+
+    <% mandata.forEach(function(mandata) { %>
+
+      <div class="collapsible__container collapsible__mandata">
+
+        <button type="button" class="collapsible">
+          <%=mandata.mandata_title%>
+        </button>
+        <div action="#" class="mandata-single content">
+          <div class="mandata-item">
+
+            <div class="mandata-row">
+              <div class="mandata-name">Título</div>
+              <input class="mandata-title mandata-input" type="text" name="fname" value='<%=mandata.mandata_title%>'>
+            </div>
+
+            <div class="mandata-row">
+              <div class="mandata-name">Categoria</div>
+              <select name="category" class="mandata-input mandata-category" value='<%=mandata.mandata_category%>'>
+                <option value="educacao" <%if ( mandata.mandata_category=="educacao" ) {%> selected <%}%>>Educação
+                </option>
+                <option value="mulheres" <%if ( mandata.mandata_category=="mulheres" ) {%> selected <%}%>>Mulheres
+                </option>
+                <option value="movimento-negro" <%if ( mandata.mandata_category=="movimento-negro" ) {%> selected <%}%>
+                    >Movimento negro</option>
+                <option value="movimento-lgbtqia" <%if ( mandata.mandata_category=="movimento-lgbtqia" ) {%> selected
+                  <%}%>>Movimento LGBTQIA+</option>
+              </select>
+            </div>
+
+            <div class="mandata-row">
+              <div class="mandata-name">Tipo</div>
+              <select name="type" class="mandata-input mandata-type" value='<%=mandata.mandata_type%>'>
+                <option value="projetos_de_lei" <%if ( mandata.mandata_type=="projetos_de_lei" ) {%> selected <%}%>>Projetos de lei</option>
+                <option value="requerimentos" <%if ( mandata.mandata_type=="requerimentos" ) {%> selected <%}%>>Requerimentos</option>
+                <option value="oficios" <%if ( mandata.mandata_type=="oficios" ) {%> selected <%}%>>Ofícios</option>
+                <option value="sessoes_especiais" <%if ( mandata.mandata_type=="sessoes_especiais" ) {%> selected <%}%>>Sessões especiais</option>
+              </select>
+            </div>
+
+            <div class="mandata-row">
+              <div class="mandata-name">Link arquivo</div>
+              <input class="mandata-link mandata-input" type="text" name="fname" disabled="disabled"
+                value='<%=mandata.mandata_link%>'>
+            </div>
+
+            <div class="mandata-row">
+              <div class="mandata-name">Data</div>
+              <input class="mandata-date mandata-input" type="date" name="fname" value='<%=mandata.mandata_date%>'>
+            </div>
+
+          </div>
+
+          <div class="mandata-buttons">
+            <button class="button-remove button myBtn">Apagar</button>
+            <button class="button-update button myBtn">Atualizar</button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <% }); %>
+
+  </div>
+
+</section>

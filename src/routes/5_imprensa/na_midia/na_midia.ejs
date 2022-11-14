@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../../../assets/global/default-head.ejs'); %>
+    <link rel="stylesheet" href="/routes/5_imprensa/na_midia/na_midia.css">
+    <script defer src="/routes/5_imprensa/na_midia/na_midia.js"></script>
+</head>
+
+
+<body>
+  <!--==================== HEADER ====================-->
+  <%- include('../../../assets/blocks/top-header/top-header.ejs'); %>
+
+  <!--==================== HEADER ====================-->
+  <%- include('../../../assets/blocks/header/header'); %>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+      <section class="home section animated-element" id="imprensa">
+
+        <h2 class="section__title">Veja nosso trabalho na Mídia</h2>
+
+        <div class="news__container container">
+
+          <div class="news__segments grid">
+
+            <% news.forEach(function(news) { %>
+
+              <a class="news__segment" target="_blank" href='<%=news.news_link%>'>
+          
+                <div class="news__image-cnt"><img class="news__image" src='<%=news.news_image%>' alt=''></div>
+                
+                <p class="news__title"><%=news.news_title%></p>
+      
+                <div class="news__info">
+                  <div class="news__data">
+                    <div class="news__origin">
+                      <%=news.news_owner%>
+                    </div>
+                    <div class="news__date">
+                      <%=news.news_date%>
+                    </div>
+                  </div>
+                </div> 
+              </a>
+
+              <% }); %>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <%- include('../../../assets/blocks/footer/footer.ejs'); %>
+
+      <!--==================== SCROLL TOP ====================-->
+      <a href="#" id="scroll-up" class="scrollup">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+      </a>
+
+</body>
+
+</html>

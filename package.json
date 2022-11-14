@@ -1,0 +1,34 @@
+{
+  "name": "biacaminha.com.br",
+  "version": "0.0.1",
+  "description": "👔 a brazillian state senator website, with an api and a admin page to manage its contents.",
+  "license": "MIT",
+  "author": {
+    "name": "Lucas Vieira",
+    "email": "lucasvtiradentes@gmail.com"
+  },
+  "homepage": "https://github.com/lucasvtiradentes/biacaminha.com.br",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasvtiradentes/biacaminha.com.br.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasvtiradentes/biacaminha.com.br/issues"
+  },
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js -e js,ejs"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "mongodb": "^4.4.1",
+    "node-fetch": "^3.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

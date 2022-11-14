@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <%- include('../../assets/global/default-head.ejs'); %>
+
+  <link rel="stylesheet" href="/routes/4_atuacao/atuacao.css">
+  <script defer src="/routes/4_atuacao/atuacao.js"></script>
+
+</head>
+
+
+<body>
+  <!--==================== HEADER ====================-->
+  <%- include('../../assets/blocks/top-header/top-header.ejs'); %>
+
+  <!--==================== HEADER ====================-->
+  <%- include('../../assets/blocks/header/header'); %>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+    <%- include('./1_areas/areas.ejs'); %>
+    <%- include('./2_projects/projects.ejs'); %>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <%- include('../../assets/blocks/footer/footer.ejs'); %>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" id="scroll-up" class="scrollup">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+</body>
+
+</html>

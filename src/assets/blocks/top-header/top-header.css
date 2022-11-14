@@ -1,0 +1,59 @@
+#top-header{
+  background-color: #A30000;
+  text-align: center;
+  display: grid;
+  padding: 0 20%;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+#top-header > div {
+  width: 100%;
+}
+
+.top_text {
+  /* margin-top: 0.3rem; */
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.top_block {
+  text-align: center;
+  height: 2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+.top_socials {
+
+}
+
+.top_socials__img {
+  height: 1.5rem;
+  padding: 0 0.2rem;
+}
+/* -------------------------------------------------------------------------- */
+
+.button-zap {
+  height: 2rem;
+}
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:600px) {
+  #top-header{
+    grid-template-areas: "t1 t3"
+                         "t2 t4";
+  }
+}
+
+@media screen and (min-width:768px) {
+
+
+  
+}
+
+@media screen and (min-width:1024px) {
+
+}

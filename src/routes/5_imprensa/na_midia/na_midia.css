@@ -1,0 +1,134 @@
+.news__description {
+  /* text-align: center; */
+  text-align: justify;
+  margin-bottom: var(--mb-2-5);
+}
+.news__container {
+  /* border: 1px solid black; */
+}
+
+.news__segments {
+  display: grid;
+}
+
+.news__segment {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  grid-template-areas: "ntit nimg"
+                       "ninf nimg";
+  background-color: var(--input-color);
+  color: var(--text-color);
+  max-height: 200px;
+}
+
+.news__segment:hover {
+  transform: translate(5%, -5%);
+  transition: .3s;
+}
+
+a:visited {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.news__image-cnt {
+  grid-area: nimg;
+}
+
+.news__image-cnt > img {
+  height: 100%;
+  width: 100%;
+  /* height: 350px; */
+  object-fit: cover;
+}
+
+.news__title{
+  grid-area: ntit;
+  padding: 0.5rem;
+  /* margin: auto auto; */
+}
+
+.news__info {
+  grid-area: ninf;
+  display: grid;
+  grid-template-rows: 0.7fr 0.3fr;
+}
+
+.news__data{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* -------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 576px) {
+
+  .news__segments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  .news__data {
+    display: none;
+  }
+
+  /* --------- */ 
+
+  .news__segment {
+    grid-template-columns: 1fr;    
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+    overflow: hidden;
+    max-height: 400px;
+    
+    grid-template-areas: "nimg"
+                         "ntit";
+  }
+  .news__image-cnt {
+    margin: 0 auto;
+  }
+
+  .news__image {
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;
+  }
+
+  .news__image ~ * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .news__segment > :last-child {
+    margin-bottom: 0;
+  }
+
+  .news__segment:hover, .news__segment:focus-within {
+    color: var(--first-color);
+    cursor: pointer;
+  }
+
+  .news__title {
+    margin-top: 0.2rem;
+    font-size: 1.25rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .news__segments {
+  grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+
+}
