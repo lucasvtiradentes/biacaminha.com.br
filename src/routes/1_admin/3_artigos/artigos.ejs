@@ -1,0 +1,80 @@
+<section class="about section" id="article">
+
+  <h2 class="section__title">Artigos</h2>
+
+  <div class="container add-button">
+    <button class="myBtn button modalButton">Adicionar artigo</button>
+  
+    <div class="modal myModal">
+  
+      <div class="modal-content add-article-content">
+        <span class="close">&times;</span>
+
+        <div class="article-item">
+          <div class="article-row">
+            <div class="article-name">Título</div>
+            <input class="article-title article-input" type="text" name="article_title">
+          </div>
+        </div>
+
+        <div class="article-item">
+          <textarea id="editor1" name="editor1" rows="10" data-sample-short>Digite aqui a matéria.</textarea>
+        </div>
+
+        <button class="add-article-button myBtn button ">Adicionar</button>
+      </div>
+  
+    </div>
+  </div>
+
+  <!-- ##################################################################### -->
+  <div class="articles__container container">
+
+    <% if(article.length > 0){ %>
+
+      <% article.forEach(function(article) { %>
+
+        <div class="article__container collapsible__container collapsible__article">
+          <button type="button" class="collapsible" article_id="<%=article.article_id%>"><%=article.article_title%></button>
+          <div action="#" class="article-single content">
+            <div class="article-item" style="display: none;">
+              <%- article.article_content %>
+            </div>
+            <div class="article-buttons">
+              <button class="button-remove button myBtn">Apagar</button>
+              <button class="button-update button myBtn">Editar</button>
+            </div>
+          </div>
+        </div>
+  
+        <% }); %>
+  
+    <% } %>
+
+  </div>
+
+  <!-- ##################################################################### -->
+  <div class="edit-article" edited_id="">
+    <div class="modal myModal edit-article-modal">
+  
+      <div class="modal-content add-article-content">
+        <span class="close">&times;</span>
+
+        <div class="article-item">
+          <div class="article-row">
+            <div class="article-name">Título</div>
+            <input class="article-title article-input" type="text" name="article_title">
+          </div>
+        </div>
+
+        <div class="article-item">
+          <textarea id="editor3" name="editor3" rows="10" data-sample-short>Digite aqui a matéria.</textarea>
+        </div>
+
+        <button class="edit-article-button myBtn button">Salvar</button>
+      </div>
+  
+    </div>
+  </div>
+
+</section>

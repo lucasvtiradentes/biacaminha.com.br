@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <%- include('../../assets/global/default-head.ejs'); %>
+
+  <!--==================== HOME ====================-->
+  <link rel="stylesheet" href="/routes/2_home/1_home/home.css">
+  <link rel="stylesheet" href="/routes/2_home/2_numbers/numbers.css">
+  <link rel="stylesheet" href="/routes/2_home/3_lastnews/lastnews.css">
+  <link rel="stylesheet" href="/routes/2_home/4_articles/artigos.css">
+  <link rel="stylesheet" href="/routes/2_home/5_flickr/flickr.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script defer src="/routes/2_home/home.js"></script>
+  <script src="/routes/2_home/5_flickr/flickr.js"></script>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <%- include('../../assets/blocks/top-header/top-header.ejs'); %>
+
+  <!--==================== HEADER ====================-->
+  <%- include('../../assets/blocks/header/header.ejs'); %>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+      <!--==================== HOME ====================-->
+      <%- include('./1_home/home.ejs'); %>
+
+      <!--==================== ABOUT ====================-->
+      <%- include('./2_numbers/numbers.ejs'); %>
+
+      <!--==================== ABOUT ====================-->
+      <%- include('./3_lastnews/lastnews.ejs'); %>
+
+      <!--==================== ABOUT ====================-->
+      <%- include('./4_articles/artigos.ejs'); %>
+
+      <!--==================== ABOUT ====================-->
+      <%- include('./5_flickr/flickr.ejs'); %>
+
+      <!--==================== CONTACT ME ====================-->
+  
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <%- include('../../assets/blocks/footer/footer.ejs'); %>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" id="scroll-up" class="scrollup">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true
+      });
+    </script>
+    
+</body>
+
+</html>

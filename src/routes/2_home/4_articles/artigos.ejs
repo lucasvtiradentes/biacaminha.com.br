@@ -1,0 +1,35 @@
+<section class="home section animated-element" id="artigos">
+
+  <h2 class="section__title">Artigos</h2>
+
+  <div class="articles__container container">
+
+    <p class="articles__description">Confira os últimos artigos sobre o nosso trabalho. Para acompanhar em detalhes, veja a seção <a href="/artigos"><span style="font-weight: bold;">Artigos</span></a>.</p>
+
+    <div class="articles__segments grid">
+
+      <% articles.forEach(function(articles) { %>
+
+        <a class="articles__segment" target="_blank" href='/artigo/<%=articles.article_id%>'>
+    
+          <p class="articles__title"><%=articles.article_title%></p>
+
+          <div class="articles__info">
+            <div class="articles__data">
+              <div class="articles__origin">
+                <%=articles.article_owner%>
+              </div>
+              <div class="articles__date">
+                <%=articles.article_date%>
+              </div>
+            </div>
+          </div> 
+        </a>
+
+        <% }); %>
+
+    </div>
+
+  </div>
+
+</section>

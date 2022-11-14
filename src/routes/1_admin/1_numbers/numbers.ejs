@@ -1,0 +1,35 @@
+<section class="about section" id="about">
+
+  <h2 class="section__title">Números de atuação</h2>
+
+  <div class="numbers__container container">
+
+    <div action="#" class="numbers-grid">
+      <div class="number-item">
+        <div class="number-name">Projetos de lei</div>
+        <input class="number-value number-input" type="number" name="projetos_de_lei" value='<%=numbers.projetos_de_lei%>'>
+      </div>
+
+      <div class="number-item">
+        <div class="number-name">Requerimentos</div>
+        <input class="number-value number-input" type="number" name="requerimentos" value="<%=numbers.requerimentos%>">
+      </div>
+
+      <div class="number-item">
+        <div class="number-name">Ofícios</div>
+        <input class="number-value number-input" type="number" name="oficios" value="<%=numbers.oficios%>">
+      </div>
+
+      <div class="number-item">
+        <div class="number-name">Sessões especiais</div>
+        <input class="number-value number-input" type="number" name="sessoes_especiais" value="<%=numbers.sessoes_especiais%>">
+      </div>
+
+      <div class="submit-button">
+        <button type="submit" onclick="updateNumbers()" class="myBtn button">Atualizar</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>

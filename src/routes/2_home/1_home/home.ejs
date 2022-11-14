@@ -1,0 +1,29 @@
+<section class="home section animated-element" id="home">
+
+  <div class="home__container container">
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <% if(homeimages.length > 0){ %>
+
+          <% homeimages.forEach(function(homeimages) { %>
+            
+            <div class="swiper-slide"><img src="<%=homeimages%>" alt="" class="home__img"></div>
+      
+            <% }); %>
+      
+          <% } %>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="home__datax">
+      <p class="home__description">Nascida e criada em Belém, Bia Caminha tem 23 anos. Foi eleita com 4.874 votos para seu primeiro mandato como a vereadora mais jovem da história da capital paraense e a segunda mais votada da região Norte pelo Partido dos Trabalhadores (PT). Para conferir a história em detalhes, veja a seção <a href="/quem_somos"><span style="font-weight: bold;">Quem somos</span></a>.</p>
+    </div>
+
+  </div>
+
+</section>

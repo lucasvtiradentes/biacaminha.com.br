@@ -1,0 +1,102 @@
+<section class="about section" id="about">
+
+  <h2 class="section__title">Notícias</h2>
+
+  <div class="container add-button">
+    <button class="myBtn button modalButton">Adicionar notícia</button>
+  
+    <div class="modal myModal add-news-modal">
+  
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="news-item">
+
+          <div class="news-row">
+            <div class="news-name">Título</div>
+            <input class="news-title news-input" type="text" name="news_title" value='<%=news.news_title%>'>
+          </div>
+
+          <div class="news-row">
+            <div class="news-name">Link imagem</div>
+            <input class="news-image-link news-input" type="text" name="news_image" value='<%=news.news_image%>'>
+          </div>
+
+          <div class="news-row">
+            <div class="news-name">Link matéria</div>
+            <input class="news-link news-input" type="text" name="news_link" value='<%=news.news_link%>'>
+          </div>
+
+          <div class="news-row">
+            <div class="news-name">Data da matéria</div>
+            <input class="news-image-link news-input" type="date" name="news_date" value='<%=news.news_date%>'>
+          </div>
+
+          <div class="news-row">
+            <div class="news-name">Site da matéria</div>
+            <input class="news-image-link news-input" type="text" name="news_owner" value='<%=news.news_owner%>'>
+          </div>
+          
+        </div>
+
+        <button class="add-news-button myBtn button ">Adicionar</button>
+      </div>
+  
+    </div>
+  </div>
+
+  <div class="news__container container">
+
+    <% if(news.length > 0){ %>
+
+    <% news.forEach(function(news) { %>
+      
+      <div class="collapsible__container collapsible__news">
+
+        <button type="button" class="collapsible"><%=news.news_title%></button>
+        <div action="#" class="news-single content">
+          
+          <div class="news-item">
+  
+            <div class="news-row">
+              <div class="news-name">Título</div>
+              <input class="news-title news-input" type="text" name="news-title" value='<%=news.news_title%>'>
+            </div>
+  
+            <div class="news-row">
+              <div class="news-name">Link imagem</div>
+              <input class="news-image news-input" type="text" name="news-image" value='<%=news.news_image%>'>
+            </div>
+  
+            <div class="news-row">
+              <div class="news-name">Link matéria</div>
+              <input class="news-link news-input" type="text" name="news-link" disabled="disabled" value='<%=news.news_link%>'>
+            </div>
+  
+            <div class="news-row">
+              <div class="news-name">Data da matéria</div>
+              <input class="news-date news-input" type="date" name="news-date" value='<%=news.news_date%>'>
+            </div>
+  
+            <div class="news-row">
+              <div class="news-name">Site da matéria</div>
+              <input class="news-owner news-input" type="text" name="news-owner" value='<%=news.news_owner%>'>
+            </div>
+            
+          </div>
+  
+          <div class="news-buttons">
+            <button class="button-remove button myBtn">Apagar</button>
+            <button class="button-update button myBtn">Atualizar</button>
+          </div>
+        </div>
+        
+      </div>
+
+      <% }); %>
+
+    <% } %>
+      
+  </div>
+
+
+</section>

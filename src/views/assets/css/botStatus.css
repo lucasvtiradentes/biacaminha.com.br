@@ -1,0 +1,46 @@
+
+    .bot-status-container{
+      /* background-color: aqua; */
+      height: calc(100vh - var(--nav-width));
+    }
+
+    .bot-status-title{
+      font-weight: bolder;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .bot-status-grid{
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 1rem;
+    }
+    
+    /* ======================================= */ 
+
+    .bot-item {
+      /* background-color: red; */
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.25rem;
+      padding: 0.25rem;
+
+      height: calc((100vh - var(--nav-width))/5) ;
+      
+      align-items:center;
+      text-align: center;
+    }
+
+    .bot-item > div {
+      font-size: 1.5rem;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+      transition: 0.3s;
+      padding: 1.7rem 0.5rem;
+      background-color: #c7e4f7;
+    }
+
+    .bot-item > div:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+    }

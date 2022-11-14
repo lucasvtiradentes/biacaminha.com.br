@@ -1,0 +1,382 @@
+.forms__container {
+  border: 1px solid var(--text-color);
+  padding-bottom: 1rem;
+}
+
+.forms-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* width: 60%; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+.form-item {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  /* padding: 1rem; */
+}
+
+.form-name {
+  text-align: center;
+}
+
+.form-value {
+
+}
+
+.form-input {
+  text-align: center;
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.numbers__container {
+  border: 1px solid var(--text-color);
+  padding-bottom: 1rem;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* width: 60%; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+.number-item {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  /* padding: 1rem; */
+}
+
+.number-name {
+  text-align: center;
+}
+
+.number-value {
+
+}
+
+.number-input {
+  text-align: center;
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.images__container {
+  border: 1px solid var(--text-color);
+  padding-bottom: 1rem;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* width: 60%; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+.image-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+
+.image-name {
+  text-align: center;
+}
+
+.image-value {
+
+}
+
+.image-input {
+  text-align: center;
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.news__container{
+  border: 1px solid var(--text-color);
+}
+
+.news-grid {
+
+}
+
+.news-item {
+  border: 1px solid var(--text-color);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position:relative;
+}
+
+.news-remove {
+
+  position:absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.news-row {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+}
+
+.news-title {
+
+}
+
+.news-link {
+
+}
+
+.news-image-link {
+
+}
+
+.news-input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 1rem;
+}
+
+.news-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.news-buttons > * {
+  margin: 0 auto;
+  /* background-color: var(--input-color); */
+  /* border: 1px solid var(--text-color); */
+  /* width: 60%; */
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.articles__container{
+  border: 1px solid var(--text-color);
+}
+
+.article-item{
+  margin-top: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.article-row {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  padding: 1rem 0;
+}
+
+#editor1 {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.article-buttons{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.mandata__container{
+  border: 1px solid var(--text-color);
+}
+
+.mandata-grid {
+
+}
+
+.mandata-item {
+  border: 1px solid var(--text-color);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position:relative;
+}
+
+.mandata-remove {
+
+  position:absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.mandata-row {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+}
+
+.mandata-title {
+
+}
+
+.mandata-link {
+
+}
+
+.mandata-image-link {
+
+}
+
+.mandata-input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 1rem;
+}
+
+.mandata-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mandata-buttons > * {
+  margin: 0 auto;
+  /* background-color: var(--input-color); */
+  /* border: 1px solid var(--text-color); */
+  /* width: 60%; */
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.collapsible {
+  background-color: var(--input-color);
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: var(--first-color);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active, .collapsible:hover {
+  background-color: var(--first-color);
+  color: #FFF;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.add-button {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.myBtn {
+  padding: 0.6rem 1.2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.submit-button{
+  padding-top: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}

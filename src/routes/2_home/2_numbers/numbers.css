@@ -1,0 +1,127 @@
+.number__description {
+  /* text-align: center; */
+  text-align: justify;
+  margin-bottom: var(--mb-2-5);
+}
+
+.number__info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* gap: .05rem; */
+}
+
+.number__number-grid{
+  padding: 0 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center; */
+}
+
+a, a::after, a::before, a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.number__number-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--input-color);
+  /* margin-bottom: var(--mb-2-5); */
+  /* margin: .15rem; */
+  /* width: 60%; */
+}
+
+.number__number-item:hover {
+  transform: translate(5%, -5%);
+  transition: .3s;
+  color: var(--first-color);
+}
+
+.number__info-name {
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.number__info-title {
+  font-size: 3rem;
+  font-weight: var(--font-semi-bold);
+  /* color: var(--title-color) */
+}
+
+.number__info-title {
+  display: block;
+  text-align: center;
+}
+
+/* ########################################################################## */
+
+/* 
+@media screen and (min-width: 350px) {
+  
+  .number__info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .number__number-item{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:568px) {
+  .number__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .number__number-item{
+    width: 25%;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+
+  .number__container {
+    column-gap: 5rem;
+  }
+
+  .number__img {
+    width: 350px;
+  }
+
+  .number__description {
+    text-align: initial;
+  }
+
+  .number__info {
+    justify-content: space-between;
+  }
+
+  .number__buttons {
+    justify-content: initial;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+}  */
+
+
+@media screen and (min-width:568px) {
+
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:1024px) {
+
+  .number__number-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}  

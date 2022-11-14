@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../../assets/global/default-head.ejs'); %>
+  <link rel="stylesheet" href="/routes/3_quem_somos/quem_somos.css">
+  <script defer src="/routes/3_quem_somos/quem_somos.js"></script>
+</head>
+
+
+<body>
+  <!--==================== HEADER ====================-->
+  <%- include('../../assets/blocks/top-header/top-header.ejs'); %>
+
+  <!--==================== HEADER ====================-->
+  <%- include('../../assets/blocks/header/header'); %>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+      <section class="whoarewe section" id="whoarewe">
+
+        <h2 class="section__title">Quem somos</h2>
+        <!-- <span class="section__subtitle">Get in touch</span> -->
+
+        <div class="who__are-container container">
+
+          <div class="who__are-img grid animated-element">
+
+            <div>
+              <img src="<%=images.imagem_quem_somos_1%>" alt="Imagem1">
+            </div>
+
+            <div class="who__are-text animated-element">
+              <p>Nascida e criada em Belém, Bia Caminha tem 23 anos. Foi eleita com 4.874 votos para seu primeiro mandato como a vereadora mais jovem da história da capital paraense e a segunda mais votada da região Norte pelo Partido dos Trabalhadores (PT).</p>
+              <p>Filha de militantes de esquerda, cresceu na força da formação política sensível às questões mais importantes para classe trabalhadora, tais como educação, saúde e a garantia de direitos fundamentais. Além disso, Bia luta contra o machismo, o racismo, a LGBTfobia e todas as formas de opressão às minorias.</p>
+              <p>Bia é acadêmica de Arquitetura e Urbanismo na UFPA; vice-presidenta do PT Pará; líder da bancada do PT na Câmara Municipal de Belém; integrante do coletivo Quintas Pretas e do Movimento Popular da Juventude (MPJ). Atuou como presidenta do Centro Acadêmico de Arquitetura e Urbanismo; coordenadora Geral do DCE da UFPA e diretora da União Nacional de Estudantes (UNE).</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <%- include('../../assets/blocks/footer/footer.ejs'); %>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" id="scroll-up" class="scrollup">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+</body>
+
+</html>

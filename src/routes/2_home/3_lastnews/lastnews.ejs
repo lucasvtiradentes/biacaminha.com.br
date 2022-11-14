@@ -1,0 +1,37 @@
+<section class="about section animated-element" id="lastnews">
+
+  <h2 class="section__title">Últimas notícias</h2>
+
+  <div class="news__container container">
+
+    <p class="news__description">Confira as últimas notícias sobre o nosso trabalho. Para acompanhar em detalhes, veja a seção <a href="/namidia"><span style="font-weight: bold;">Na mídia</span></a>.</p>
+
+    <div class="news__segments grid">
+
+      <% lastnews.forEach(function(lastnews) { %>
+
+        <a class="news__segment" target="_blank" href='<%=lastnews.news_link%>'>
+          
+          <div class="news__image-cnt"><img class="news__image" src='<%=lastnews.news_image%>' alt=''></div>
+          
+          <p class="news__title"><%=lastnews.news_title%></p>
+
+          <div class="news__info">
+            <div class="news__data">
+              <div class="news__origin">
+                <%=lastnews.news_owner%>
+              </div>
+              <div class="news__date">
+                <%=lastnews.news_date%>
+              </div>
+            </div>
+          </div> 
+        </a>
+
+        <% }); %>
+
+    </div>
+
+  </div>
+
+</section>
